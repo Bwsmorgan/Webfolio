@@ -38,7 +38,7 @@
   /* border: 2px solid blueviolet; */
 
   /* background: #606660; */
-  background: url(./Images/righthalf_background.jpg);
+  background: url(./Images/righthalf_background\ 2.jpg);
 
   width: 50vw;
   height: 100vh;
@@ -81,4 +81,31 @@
   position: absolute;
   top: 25%;
   padding: 0 0 0 5%;
+}
+
+.projects {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.projects div {
+  float:left
+  position:relative;
+  border: 2px solid red;
+  width: 33%;
+  height: 500px;
+}
+
+body .scrollArrow{
+  position: absolute;
+  
+  height: 30px;
+  
+  left: 50%;
+  /* margin-left: -5px; */
+  /* margin-right: 50%; */
+  margin-top: 55%;
+  z-index: 1;
 }
