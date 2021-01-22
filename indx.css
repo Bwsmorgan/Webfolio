@@ -8,46 +8,34 @@
   overflow: scroll;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 /* body {
   height: 1360px;
 } */
 
 .leftHalf {
-  /* border: 2px solid blueviolet; */
-  /* display: inline; */
   width: 50vw;
   height: 100vh;
-  /* position: relative; */
   float: left;
-
-  /* left: 20%; */
 }
 
 /* In the event I ever want to make the image smaller I decided to places it within a container inside a container */
 .img {
-  /* border: 2px solid blueviolet; */
   width: 100%;
   height: 100%;
-
   background: url(./Images/webfolio_sp.jpg);
   background-position-y: 15%;
   background-size: cover;
 }
 
 .rightHalf {
-  /* border: 2px solid blueviolet; */
-
-  /* background: #606660; */
   background: url(./Images/righthalf_background\ 2.jpg);
-
   width: 50vw;
   height: 100vh;
-
   position: relative;
-
   float: right;
-
-  /* right: 0px; */
 }
 
 .rightHalf ul li {
@@ -66,46 +54,55 @@
   display: inline-block;
   margin-top: 20px;
   margin-right: 18px;
-  height: 20px;
-  width: 20px;
+  height: 19px;
+  width: 19px;
 }
 
-/* Hi, Im Brendan Header */
+.fa-instagram {
+  margin-top: 20px;
+  margin-right: 18px;
+  font-size: 1.33em;
+  color: black;
+}
+
 .rightHalf h1 {
   color: white;
-
   font-size: 50pt;
   font-family: Bodoni + Moda;
-
-  /* text-align: center; */
   position: absolute;
   top: 25%;
   padding: 0 0 0 5%;
 }
 
-.projects {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.projects div {
-  float:left
-  position:relative;
-  border: 2px solid red;
-  width: 33%;
-  height: 500px;
+/* SCROLL ARROW AND ANIMATION */
+
+body .scrollArrow {
+  position: absolute;
+
+  height: 30px;
+
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 1rem;
+  z-index: 1;
+  animation: arrow-down 1s alternate infinite;
+  transition: scroll-behavior 3s;
 }
 
-body .scrollArrow{
-  position: absolute;
-  
-  height: 30px;
-  
-  left: 50%;
-  /* margin-left: -5px; */
-  /* margin-right: 50%; */
-  margin-top: 55%;
-  z-index: 1;
+@keyframes arrow-down {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
 }
