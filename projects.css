@@ -1,68 +1,41 @@
 /* PAGE 2/PROJECTS PAGE */
 
 .projects {
-  /* border: 3px solid blue; */
   height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
-  /* margin: 10px 10px 10px 10px; */
 }
 
-/* ROW ONE */
-
-.row1 {
+.row1,
+.row2 {
   display: flex;
   /* border: 2px solid red; */
   height: 33.3%;
   width: 100%;
-  /* margin: 10px; */
   margin-top: 10px;
   justify-content: space-around;
 }
 
-.row1 .box1 {
+.box1,
+.box2,
+.box3 {
   position: relative;
-
-  width: 35%;
-  height: 100%;
-  overflow: hidden;
-}
-.row1 .box2 {
-  position: relative;
-  width: 40%;
-  height: 100%;
-  overflow: hidden;
-}
-.row1 .box3 {
-  position: relative;
-  width: 20%;
   height: 100%;
   overflow: hidden;
 }
 
-.row1 .logo1 {
+/* ROW ONE */
+
+.row1 .logo1,
+.logo2,
+.logo3 {
   position: absolute;
   height: 60rem;
   margin-top: -70%;
-  /* transition: all 3s linear; */
 }
 
-.row1 .logo2 {
-  position: absolute;
-  height: 50rem;
-  margin-top: -50%;
-  /* transition: all 3s linear; */
-}
-
-.row1 .logo3 {
-  position: absolute;
-  height: 50rem;
-  margin-top: -90%;
-  margin-left: -90%;
-}
-
-/* HOVERING OVER ANY PORJECT WILL ZOOM OUT ON THE IMAGE WITHIN THE RESPECTIVE DIV */
+/* HOVERING OVER ANY PROJECT WILL ZOOM OUT ON THE IMAGE WITHIN THE RESPECTIVE DIV */
 .projects div a:hover img {
   position: relative;
   height: 100%;
@@ -70,31 +43,15 @@
   margin: auto;
 }
 
-/* ROW 2 */
-
-.row2 {
-  display: flex;
-  height: 33.3%;
-  width: 100%;
-  justify-content: space-around;
-  margin-top: 10px;
-  /* margin: 0 10px 0 10px; */
-}
-
-.row2 .box1 {
+/* .box1,
+.box2 {
   position: relative;
-  width: 25%;
+
   height: 100%;
   overflow: hidden;
-}
-.row2 .box2 {
-  position: relative;
-  width: 45%;
-  height: 100%;
-  overflow: hidden;
-}
+} */
+
 .row2 .box3 {
-  border: 2px solid blue;
   width: 25%;
   height: 100%;
 }
@@ -114,6 +71,10 @@
 }
 
 .row2 .logo3 {
+  position: absolute;
+  height: 95rem;
+  margin-top: -115%;
+  margin-left: -90%;
 }
 
 .row3 {

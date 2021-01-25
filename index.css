@@ -1,125 +1,105 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&display=swap"); */
-/* @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,700;1,900&display=swap"); */
-/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"); */
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
 
-  /* height: 90vh;
-  width: 90vw; */
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0 0 0 0;
+  overflow: scroll;
 }
 
-a {
+html {
+  scroll-behavior: smooth;
+}
+
+.leftHalf {
+  width: 50vw;
+  height: 100vh;
+  float: left;
+}
+
+/* In the event I ever want to make the image smaller I decided to places it within a container inside a container */
+.img {
+  width: 100%;
+  height: 100%;
+  background: url(./Images/webfolio_sp.jpg);
+  background-position-y: 15%;
+  background-size: cover;
+}
+
+.rightHalf {
+  background: url(./Images/righthalf_background\ 2.jpg);
+  width: 50vw;
+  height: 100vh;
+  position: relative;
+  float: right;
+}
+
+ul li {
+  display: inline;
+}
+
+ul .navbarOptions a {
   color: black;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 0 0 0 40px;
   text-decoration: none;
 }
 
-/* .navigator {
-  /* border: 3px solid red; */
-  background: white;
-  height: 40px;
-  display: flex;
-  align-items:center;
-  justify-content: space-between;
-  text-align: end;
-  padding: 0 40% 0 50%;
-
-  font-family: Roboto;
-  color: grey; */
-} */
-
-.group1 {
-  margin: 0px 40px 20% 40px;
+.mediaIcon a img {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 18px;
+  height: 19px;
+  width: 19px;
 }
 
-.my_photobox{
-
-  position: fixed;
-
-  width: 35vw ;
-  height: 100vh;
-  border: 4px solid red;
-  background-size: cover;
-  background-position:right;
+.fa-instagram {
+  margin-top: 20px;
+  margin-right: 18px;
+  font-size: 1.33em;
+  color: black;
 }
 
-.my_photobox img{
-
-  max-width: 100%;
-  max-height: 100%;
-  
-}
-
-/* .my_photo {
-  /* position: fixed; */
-
-  /* float: left;
-  max-width: 100%;
-  max-height: 100%;
-
-  background: url(./Images/webfolio_sp.jpg); */
-  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(./Images/webfolio_sp.jpg); */
-
- 
-  /* background-size: cover;
-  background-position: center; */
-  /* background-repeat: no-repeat; */
-} */
-
-
-.welcome_page{
-
-  float: left;
-  height: 100vh;
-  background: blueviolet;
-  
-}
-/* .welcome_page {
-  float: right;
-  height: 100vh;
-  width: 50%;
-
-  background: #383e38;
-
- 
-
-  
-
+.rightHalf h1 {
   color: white;
-  font-family: Roboto, sans-serif;
-  font-weight: 700;
-  font-size: 70px;
-
-  display: flex;
-  align-items: flex-start;
-} */
-
-/* .welcome_header {
-  margin-left: 35px;
-  /* border: 2px solid crimson; */
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-} */
-
-.welcome_header em {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-size: 50pt;
+  font-family: Bodoni + Moda;
+  position: absolute;
+  top: 25%;
+  padding: 0 0 0 5%;
 }
 
-/* .welcome_greeting {
-  border: 2px solid crimson;
-  display: flex;
-  display: block;
-  justify-content: right;
-} */
+/* SCROLL ARROW AND ANIMATION */
 
-@media screen and (max-width: 768px) {
-  .group1 {
-    height: 50vh;
+body .scrollArrow {
+  position: absolute;
+
+  height: 30px;
+
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 1rem;
+  z-index: 1;
+  animation: arrow-down 1s alternate infinite;
+  transition: scroll-behavior 3s;
+}
+
+@keyframes arrow-down {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
   }
 }
