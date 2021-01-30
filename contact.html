@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Contact | Brendan Morgan</title>
-    <!-- font awesome stylesheet; used for including various icons within a project -->
+ 
     <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap" rel="stylesheet">
     
     
     <!-- <link rel="stylesheet" href="./index.css"> -->
@@ -16,7 +18,7 @@
             text-align: center;
             height: 10vh;
             width: 100vw;
-            background:url(./Images/righthalf_background\ 2.jpg);
+            background:url(./Images/Photos/backgroundPhoto\(1\).jpg);
         }
 
         a{
@@ -35,14 +37,12 @@
 
         /* Instagram and LinkedIn are the only external links in our navbar  */
         .externalLink{
-   
+            
              float: right;
              color: black;
-             /* padding: 0 0 0 5px; */
              margin-right: 18px;
         }
-
-    
+ 
     </style>
 
 </head>
@@ -52,7 +52,7 @@
     <nav>
         <a href="./index.html" class="internalLink">HOME</a>
         
-        <a href="./index.html#section2" 
+        <a href="./index.html#projectsPage" 
         class="internalLink">PROJECTS</a>
         
         <a href="./about.html"class="internalLink">ABOUT</a>
@@ -61,7 +61,7 @@
 
         <a href="#" class="externalLink"><i class="fab fa-instagram" style="font-size: 1.33em;"></i></a>
 
-        <a href="#" class="externalLink" ><img class="linkedin_logo"src="./Images/linkedin_logo(2).png" alt="linkedin_logo" style="height: 19px;width: 19px;"></a>
+        <a href="https://www.linkedin.com/in/brendan-morgan-a043a8190/" target="_blank" class="externalLink" ><img class="linkedin_logo" src="./Images/Media Icons/linkedinLogo(1).png" alt="linkedin_logo" style="height: 19px;width: 19px;"></a>
     </nav>
     
     <header>
@@ -72,54 +72,44 @@
 
     <section style="text-align: center;">
 
-        <p style="margin: 0 30px 0 30px;"><em>Thank you for taking the time to visit my website! If you would like to chat, feel free to contact me.</em> </p><br>
+        <p style="margin: 0 30px 0 30px;"><em>Thanks for taking the time to visit my website! If you'd like to chat, feel free to contact me.</em> </p><br>
 
-        <i class="far fa-envelope"><span style="margin-left: 10px;margin-right: 20px; font-family: 'Courier New', Courier, monospace;">bwsmorgan@gmail.com</span></i>
+        <i class="far fa-envelope"><span style="margin-left: 10px;margin-right: 20px; font-family:'Bodoni Moda', serif;">bwsmorgan@gmail.com</span></i>
 
-        <i class="far fa-phone"><span style="margin-left: 10px; font-family: 'Courier New', Courier, monospace;">(289)892-4533</span></i>
+        <i class="far fa-phone"><span style="margin-left: 10px; font-family:'Bodoni Moda', serif;font-size: 11pt;">(289) 892-4533</span></i>
         
     </section>
 
-    <div style="box-sizing: border-box; width: 100vw; height: 50vh; display: inline-block; margin-top: 20px; text-align: center;">
+    <div style="box-sizing: border-box; width: 100vw; height: 40vh; display: inline-block; margin-top: 20px; text-align: center;border: ;">
 
         <section>
 
-            <form action="contact.php" method="GET">
+            <form action="contact.php" method="POST">
             
-                <label for="name"></label>
-                <input type="text" name="name" id="name" placeholder="Name" size="82"><br><br>
+                <input type="text" name="sendersName" id="name" placeholder="Enter your name"  re size="82" required><br>
             
-                <label for="email"></label>
-                <input type="email" name="email" id="email" placeholder="Email" size="82"><br>
+                <input type="email" name="sendersEmail" id="email" placeholder="Enter your email" size="82" required><br>
+
+                <textarea name="message" id="" cols="80" rows="10" placeholder="Your message" style="margin-top: 5px;"></textarea>
+                <br>
+
+                <button type="submit" name="submit"></button>
+
+                <input type="submit" name="submitBtn" id="">
             
             </form>
             
-            <br>
-            
-            <textarea name="" id="" cols="80" rows="15" placeholder="Message" style="margin-top: 5px;"></textarea>
-            
             <form action="" style="display:block;">
-
-                <button type="submit">Submit</button>
-                
+ 
             </form>
 
         </section>
     </div>
 
+    <footer style="text-align: center;margin-top: 50px; font-size: 10pt;">
+    &copy 2021 Brendan Morgan
 
-
-        
-
-    </section>
-    <section>
-
-
-    </section>
-
-
-
-
-
-    </div>
+    </footer>
+    
 </body>
+</html>

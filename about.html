@@ -4,51 +4,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>About | Brendan Morgan</title>
-    <!-- font awesome stylesheet; used for including various icons within a project -->
+    
     <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css">
-    <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="./about.css">
+
+    <style>
+        nav {
+            text-align: center;
+            height: 10vh;
+            width: 100vw;
+            background: url(./Images/Photos/backgroundPhoto\(1\).jpg);
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .internalLink {
+            padding: 0 0 0 80px;
+        }
+
+        /* Instagram and LinkedIn are the only external links in our navbar  */
+        .externalLink {
+            float: right;
+            color: black;
+            /* padding: 0 0 0 5px; */
+            margin-right: 18px;
+        }
+
+        .myPhotoContainer{
+            box-sizing: border-box;
+            width: 50vw; 
+            height: 80vh; 
+            display: inline-block; 
+            text-align: center;
+        }
+
+        .myPhoto{
+            background: url(./Images/Photos/headShotPhoto.jpg);
+            width: 100%;
+            height: 100%; 
+            background-size: cover;
+            background-repeat: no-repeat; 
+            background-position-y: 10%;
+        }
+
+        .aboutMe{
+            box-sizing: border-box;
+            width: 50vw; 
+            height: 80vh; 
+            text-align: center;
+            float: right;
+        }
+
+        h1{
+            text-align: center;
+            font-size: 50pt;
+        }
+
+        p{
+            line-height: 2.5; 
+            margin-left: 20px; 
+            margin-right: 20px;
+        }
+
+        .resume{
+            border: 1px solid black;
+            border-radius: 50px; 
+            width: 300px;
+        }
+
+        footer{
+            text-align: center;
+            margin-top: 25px;
+            font-size: 10pt;
+        }
+
+    </style>
 
 </head>
 
-<body>
+<body style="margin: 0;">
 
-    <div class="leftHalf">
+    <nav>
+        <a href="./index.html" class="internalLink">HOME</a>
 
-        <a href="./index.html"><div class="img"></div></a>
+        <a href="./index.html#projectsPage" class="internalLink">PROJECTS</a>
 
-    </div>
+        <a href="./About.html" class="internalLink">ABOUT</a>
 
-    <div class="rightHalf" style="background: url(./Images/righthalf_background.jpg);">
+        <a href="./contact.html" class="internalLink">CONTACT</a>
 
-        <nav>
-            <ul style="font-weight: bold;">
+        <a href="#" class="externalLink"><i class="fab fa-instagram" style="font-size: 1.33em;"></i></a>
 
-                <li class="navbarOptions"><a href="./index.html#section2">PROJECTS</a></li>
-                <li class="navbarOptions"><a href="./about.html">ABOUT</a></li>
-                <li class="navbarOptions"><a href="./contact.html">CONTACT</a></li>
+        <a href="https://www.linkedin.com/in/brendan-morgan-a043a8190/" target="_blank" class="externalLink"><img class="linkedin_logo" src="./Images/Media Icons/linkedinLogo(1).png"
+                alt="linkedin_logo" style="height: 19px;width: 19px;"></a>
+    </nav>
 
-                <!-- fontawesome icon; alternative method to include icons within a projects versus using the img tag  -->
-                <li class="mediaIcon" style="float: right;"><a href="#"><i class="fab fa-instagram"></i></a></li>
 
-                <li class="mediaIcon" style="float: right;"><a href="#"><img class="linkedin_logo"
-                src="./Images/linkedin_logo(2).png" alt="linkedin_logo"></a></li>
+    <section class="myPhotoContainer">
+    
+        <div class="myPhoto"> </div>
 
-            </ul>
+    </section>
 
-        </nav>
-
-        <header>
+    <section class="aboutMe">
+    
+        <div>
 
             <h1>ABOUT ME</h1>
 
-        </header>
+            <p>Hi my name is Brendan. I am a creative enthusiast who has a passion for graphic design and software development. I spent four season playing professional
+            football in the CFL, and I am currently looking to begin a career within the visual communications or IT industry. As a computing and creative arts
+            graduate from Queen’s University I have experience working with programs such as Adobe illustrator and photoshop, along
+            with languages such as HTML, CSS, Python, PHP and others.</p>
 
-        <p style="margin-left: 5%; margin-right: 5%; line-height: 1.5; font-size: 15pt;color: whitesmoke; position: absolute; margin-top: 30%;">
-            <br>Hi my name is Brendan, I'm a creative enthusiast who has a passion for graphic design and software development. I currently live in Edmonton, Alberta but I am originally from Toronto, Ontario. I spent four season playing professional football in the CFL, and I am currently pursuing a career within the IT industry. As a computing and creative arts graduate from Queen’s University I have experience working with programs such as Adobe illustrator and photoshop, along with languages such as HTML, CSS, Python, PHP and others.
-        </p>
+            <a class="resume" href="./Resume.docx" download>Download My Resume</a>
 
-    </div>
+            </div>
+
+    </section>
+
+    <footer>&copy 2021 Brendan Morgan</footer>
     
 </body>
+</html>
+    

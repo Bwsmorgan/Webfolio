@@ -8,6 +8,14 @@
   overflow: scroll;
 }
 
+p {
+  margin-left: 5%;
+  font-size: 40pt;
+  color: white;
+  position: absolute;
+  margin-top: 40%;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -19,16 +27,16 @@ html {
 }
 
 /* In the event I ever want to make the image smaller I decided to places it within a container inside a container */
-.img {
+.myPhotoContainer {
   width: 100%;
   height: 100%;
-  background: url(./Images/webfolio_sp.jpg);
+  background: url(./Images/Photos/headShotPhoto.jpg);
   background-position-y: 15%;
   background-size: cover;
 }
 
 .rightHalf {
-  background: url(./Images/righthalf_background\ 2.jpg);
+  background: url(./Images/Photos/backgroundPhoto\(1\).jpg);
   width: 50vw;
   height: 100vh;
   position: relative;
@@ -75,9 +83,7 @@ ul .navbarOptions a {
 
 body .scrollArrow {
   position: absolute;
-
   height: 30px;
-
   left: 50%;
   transform: translate(-50%, -50%);
   bottom: 1rem;
@@ -86,6 +92,13 @@ body .scrollArrow {
   transition: scroll-behavior 3s;
 }
 
+footer {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 10pt;
+}
+
+/* CREATES THE SLOW PULSATING FADE IN/FADE OUT EFFECT ON THE SCROLL DOWN ARROW */
 @keyframes arrow-down {
   0% {
     opacity: 0;
