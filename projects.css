@@ -26,5 +26,5 @@
 
 /* SETS THE BACKGROUND COLOUR WHEN USER HOVERS OVER A PROJECT SELECTION TYPE */
 .projectType a:hover {
-  background: url(./Images/Photos/backgroundPhoto\(1\).jpg);
+  background: url(./Images/Photos/backgroundPhoto1.jpg);
 }

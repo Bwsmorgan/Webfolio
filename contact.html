@@ -18,7 +18,7 @@
             text-align: center;
             height: 10vh;
             width: 100vw;
-            background:url(./Images/Photos/backgroundPhoto\(1\).jpg);
+            background:url(./Images/Photos/backgroundPhoto1.jpg);
         }
 
         a{
@@ -42,7 +42,10 @@
              color: black;
              margin-right: 18px;
         }
- 
+
+        input:focus{
+            background-color:rgb(176,206,210);
+        }
     </style>
 
 </head>
@@ -61,7 +64,7 @@
 
         <a href="#" class="externalLink"><i class="fab fa-instagram" style="font-size: 1.33em;"></i></a>
 
-        <a href="https://www.linkedin.com/in/brendan-morgan-a043a8190/" target="_blank" class="externalLink" ><img class="linkedin_logo" src="./Images/Media Icons/linkedinLogo(1).png" alt="linkedin_logo" style="height: 19px;width: 19px;"></a>
+        <a href="https://www.linkedin.com/in/brendan-morgan-a043a8190/" target="_blank" class="externalLink" ><img class="linkedin_logo" src="./Images/Media Icons/linkedinLogo1.png" alt="linkedin_logo" style="height: 19px;width: 19px;"></a>
     </nav>
     
     <header>
@@ -80,22 +83,20 @@
         
     </section>
 
-    <div style="box-sizing: border-box; width: 100vw; height: 40vh; display: inline-block; margin-top: 20px; text-align: center;border: ;">
+    <div style="box-sizing: border-box; width: 100vw; height: 40vh; display: inline-block; margin-top: 20px; text-align: center;">
 
         <section>
 
             <form action="contact.php" method="POST">
             
-                <input type="text" name="sendersName" id="name" placeholder="Enter your name"  re size="82" required><br>
+                <input type="text" name="sendersName" id="name" placeholder="Enter your name" re size="82" required style="padding: 5px; margin-bottom: 10px;" ><br>
             
-                <input type="email" name="sendersEmail" id="email" placeholder="Enter your email" size="82" required><br>
+                <input type="email" name="sendersEmail" id="email" placeholder="Enter your email" size="82" required style="padding: 5px; margin-bottom: 10px;"><br>
 
-                <textarea name="message" id="" cols="80" rows="10" placeholder="Your message" style="margin-top: 5px;"></textarea>
+                <textarea name="message" id="" cols="75" rows="10" placeholder=" Your message" style="margin-top: 5px;"></textarea>
                 <br>
 
-                <button type="submit" name="submit"></button>
-
-                <input type="submit" name="submitBtn" id="">
+                <input type="submit" name="submitBtn" style="width: 10rem;">
             
             </form>
             
