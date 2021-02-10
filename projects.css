@@ -28,3 +28,9 @@
 .projectType a:hover {
   background: url(./Images/Photos/backgroundPhoto1.jpg);
 }
+
+/* @media screen and (max-width: 600px) {
+  .projects {
+    display: none;
+  }
+} */

@@ -16,7 +16,9 @@ about.html - provides user with information about myself
 
     source code showcases the use of internal css commands
 
-contact.html - this page provides user with multiple ways to contact me the owner and developer of the website
+contactPage.php - this page provides user with multiple ways to contact me the owner and developer of the website
 
     source code introduces the use of the following tags: forms and textarea
     and implements php
+
+contact.php - Handles the email form created in contactPage.php using phpMailer

@@ -1,38 +1,25 @@
-.leftLogoBox {
-  width: 50vw;
-  height: 100vh;
-  float: left;
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.box {
+  width: 410px;
+  height: 280px;
+  margin: 45px 0px 0px 5px;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
+  z-index: 1;
+  position: relative;
 }
 
-.rightLogoBox {
-  width: 50vw;
-  height: 100vh;
-  float: right;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-}
-
-/* centers the images */
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.rightsideLogo {
-  width: 100vh;
-  height: 33vh;
-  display: flex;
-  align-items: center;
-}
-
-.leftsideLogo {
-  width: 100vh;
-  height: 50vh;
-  display: flex;
-  align-items: center;
+.box img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
 }

@@ -1,0 +1,78 @@
+nav {
+  border: 1px solid rgba(255, 0, 0, 0);
+  text-align: center;
+  height: 10vh;
+  width: 100vw;
+  background: url(./Images/Photos/backgroundPhoto1.jpg);
+}
+
+a {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.internalLink {
+  padding: 0 0 0 80px;
+}
+
+/* Instagram and LinkedIn are the only external links in our navbar  */
+.externalLink {
+  float: right;
+  color: black;
+  margin-right: 18px;
+}
+
+input:focus {
+  background-color: rgb(176, 206, 210);
+}
+
+footer {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 10pt;
+}
+
+@media screen and (max-width: 1050px) {
+  nav a {
+    display: block;
+  }
+  nav {
+    height: 30vh;
+  }
+}
+
+.alertEmailSuccess {
+  width: 200px;
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  background: rgba(86, 164, 232, 0.7);
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  animation: fadeOut 3s ease-in;
+}
+
+.alertEmailFail {
+  width: 200px;
+  z-index: 1;
+  background: rgba(255, 0, 0, 0.7);
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  animation: fadeOut 3s ease-in;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

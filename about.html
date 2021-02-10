@@ -11,11 +11,14 @@
 
     <style>
         nav {
+            border: 1px solid rgba(255, 0, 0,0);
             text-align: center;
             height: 10vh;
             width: 100vw;
             background: url(./Images/Photos/backgroundPhoto1.jpg);
         }
+
+       
 
         a {
             display: inline-block;
@@ -33,7 +36,6 @@
         .externalLink {
             float: right;
             color: black;
-            /* padding: 0 0 0 5px; */
             margin-right: 18px;
         }
 
@@ -55,10 +57,12 @@
         }
 
         .aboutMe{
+            
             box-sizing: border-box;
             width: 50vw; 
             height: 80vh; 
             text-align: center;
+            align-items: center;
             float: right;
         }
 
@@ -68,23 +72,66 @@
         }
 
         p{
+            margin-top: -20px;
             line-height: 2.5; 
             margin-left: 20px; 
             margin-right: 20px;
         }
 
         .resume{
+        
             border: 1px solid black;
             border-radius: 50px; 
             width: 300px;
+            font-size: small;
         }
 
         footer{
             text-align: center;
             margin-top: 25px;
             font-size: 10pt;
+            height: 5vh;
         }
 
+        @media screen and (max-width: 1050px) {
+
+            nav a{
+                /* height: 15vh; */
+                display: block;
+                
+            }
+            nav {
+            height: 30vh;
+            
+            }
+            .aboutMe {
+                width: 100%;
+                height: 90vh;
+            }
+        
+            .myPhotoContainer{
+                width: 100vw;
+            }
+            footer div{
+                width:100%;
+                height: 8vh;
+            }
+        }
+
+        @media screen and (max-height: 450px) {
+
+            .myPhotoContainer{
+                width: 100vw;
+            }
+            .aboutMe {
+                display: block;
+                text-align: center;
+            }
+            nav{
+                height: 25vh;
+                display: list-item;
+            }
+        }         
     </style>
 
 </head>
@@ -98,8 +145,8 @@
 
         <a href="./About.html" class="internalLink">ABOUT</a>
 
-        <a href="./contact.html" class="internalLink">CONTACT</a>
-
+        <a href="./contactPage.php" class="internalLink">CONTACT</a>
+        
         <a href="#" class="externalLink"><i class="fab fa-instagram" style="font-size: 1.33em;"></i></a>
 
         <a href="https://www.linkedin.com/in/brendan-morgan-a043a8190/" target="_blank" class="externalLink"><img class="linkedin_logo" src="./Images/Media Icons/linkedinLogo1.png"
@@ -119,18 +166,26 @@
 
             <h1>ABOUT ME</h1>
 
-            <p>Hi my name is Brendan. I am a creative enthusiast who has a passion for graphic design and software development. I spent four season playing professional
-            football in the CFL, and I am currently looking to begin a career within the visual communications or IT industry. As a computing and creative arts
-            graduate from Queen’s University I have experience working with programs such as Adobe illustrator and photoshop, along
-            with languages such as HTML, CSS, Python, PHP and others.</p>
+            <p>
+                Hi my name is Brendan. I am a creative enthusiast who has a passion for graphic design and software development. I spent four season playing professional
+                football in the CFL, and I am currently looking to begin a career within the visual communications or IT industry. As a computing and creative arts
+                graduate from Queen’s University I have experience working with programs such as Adobe illustrator and photoshop, along
+                with languages such as HTML, CSS, Python, PHP and others.<br>
 
-            <a class="resume" href="./Resume.docx" download>Download My Resume</a>
+                <a class="resume" href="./Resume.docx" download>Download My Resume</a>
+            </p>
 
-            </div>
+        </div>
+        <br><br>
 
     </section>
-
+     
     <footer>&copy 2021 Brendan Morgan</footer>
+
+    
+    
+   
+    
     
 </body>
 </html>
