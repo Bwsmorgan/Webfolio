@@ -3,7 +3,7 @@ nav {
   text-align: center;
   height: 10vh;
   width: 100vw;
-  background: url(./Images/Photos/backgroundPhoto1.jpg);
+  background: rgb(80, 94, 80);
 }
 
 a {

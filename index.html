@@ -1,102 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Brendan Morgan</title>
 
     <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css" />
-    <link rel="stylesheet" href="./index.css" />
-    <link rel="stylesheet" href="./projects.css" />
+    <link rel="stylesheet" href="./index.css">
 
-    <!-- WHEN THE PROJECT BUTTON IS CLICKED THE PAGE TITLE WILL CHANGE -->
-    <script type="text/javascript">
-      function changePageTitle() {
-        newPageTitle = 'Projects | Brendan Morgan';
-        document.title = newPageTitle;
-      } 
-    </script>
+</head>
 
-  </head>
+<body>
 
-  <body>
+    <!-- WELCOME PAGE -->
+    <div class="container">
 
-    <a href="#projectsPage"
-      ><img
-        class="scrollArrow"
-        src="./Images/Web Icons/whiteScrollArrow.png"
-        alt="scroll Arrow"
-  
-    /></a>
-    
+        <div class="leftHalf"></div>
+        
+        <div class="rightHalf">
 
-    <div class="leftHalf">
-      <div class="myPhotoContainer"></div>
-    </div>
+            <nav>
+                <ul style="font-weight: bold">
 
-    <div class="rightHalf">
-      <nav>
-        <ul style="font-weight: bold">
+                    <li class="navbarOptions">
+                        <a href="./index.html#projectsPage" onclick="changePageTitle()">PROJECTS</a>
+                    </li>
 
-          <li class="navbarOptions">
-            <a href="./index.html#projectsPage" onclick="changePageTitle()">PROJECTS</a>
-          </li>
+                    <!-- WHEN THE PROJECT BUTTON IS CLICKED THE PAGE TITLE WILL CHANGE -->
+                    <script type="text/javascript">
+                        function changePageTitle() {
+                            newPageTitle = 'Projects | Brendan Morgan';
+                            document.title = newPageTitle;
+                        } 
+                    </script>
 
-          <li class="navbarOptions"><a href="./about.html">ABOUT</a></li>
-          <li class="navbarOptions"><a href="./contactPage.php">CONTACT</a></li>
+                    <li class="navbarOptions"><a href="./about.html">ABOUT</a></li>
+                    <li class="navbarOptions"><a href="./contactPage.php">CONTACT</a></li>
 
-          <li class="mediaIcon" style="float: right">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </li>
+                    <li class="mediaIcon" style="float: right">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
 
-          <li class="mediaIcon" style="float: right">
-            <a
-              href="https://www.linkedin.com/in/brendan-morgan-a043a8190/"
-              target="_blank"
-              ><img
-                class="linkedin_logo"
-                src="./Images/Media Icons/linkedinLogo1.png"
-                alt="linkedin_logo"
-            /></a>
-          </li>
-        </ul>
-      </nav>
+                    <li class="mediaIcon" style="float: right">
+                        <a
+                        href="https://www.linkedin.com/in/brendan-morgan-a043a8190/"
+                        target="_blank"
+                        ><img
+                            class="linkedin_logo"
+                            src="./Images/Media Icons/linkedinLogo1.png"
+                            alt="linkedin_logo"
+                        /></a>
+                    </li>
+                </ul>
+            </nav>
 
-      <header>
-        <h1>
-          Hi I'm<br />
-          BRENDAN<br />
-        </h1>
-      </header>
+            <header>
+                <h1>
+                Hi I'm<br />
+                BRENDAN<br />
+                </h1>
+                <p><br>Welcome to my page.</p>
+            
+            </header>
 
-      <p><br><br>Welcome to my page.</p>
+            <a href="#projectsPage"><img class="scrollArrow" src="./Images/Web Icons/whiteScrollArrow.png" alt="scroll Arrow" /></a>
+        </div>
     </div>
 
     <section id="projectsPage" class="projects">
+    
+        <div class="projectType">
+            <a href="./projectLogos.html">
+                <h4><br /><br /><br />LOGOS</h4>
+            </a>
+        </div>
+    
+        <div class="projectType">
+            <a href="https://www.behance.net/gallery/110823535/Medieval-Game-Character-Sprites" target="_blank">
+                <h4><br /><br />GAME DESIGN</h4>
+            </a>
+        </div>
+    
+        <div class="projectType">
+            <a href="https://github.com/Bwsmorgan" target="_blank">
+                <h4><br /><br />PROJECT SOURCE CODE</h4>
+            </a>
+        </div>
 
-      <div class="projectType">
-        <a href="./projectLogos.html"
-          ><h4><br /><br /><br />LOGOS</h4></a
-        >
-      </div>
-
-      <div class="projectType">
-        <a
-          href="https://www.behance.net/gallery/110823535/Medieval-Game-Character-Sprites"
-          target="_blank"
-          ><h4><br /><br />GAME DESIGN</h4></a
-        >
-      </div>
-
-      <div class="projectType">
-        <a href="https://github.com/Bwsmorgan" target="_blank"
-          ><h4><br /><br />PROJECT SOURCE CODE</h4>
-        </a>
-      </div>
+    
+        <footer><div>&copy 2021 Brendan Morgan</div></footer>
+        
     </section>
-
-    <footer>&copy 2021 Brendan Morgan</footer>
-  </body>
+    
+</body>
 </html>
