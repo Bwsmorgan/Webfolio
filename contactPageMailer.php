@@ -23,11 +23,11 @@ if (isset($_POST['submit'])){
     //SMTP SETTINGS
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';
-    $mail->SMTPAuth = true;
+    $mail->SMTPAuth = false; 
     $mail->Username = $myEmail; 
     $mail->Password = $myPassword;
     $mail->Port = 587; //465
-    $mail->SMTPSecure = "tls"; //ssl
+    $mail->SMTPSecure = false; "tls"; //ssl
 
     //EMAIL SETTINGS
     $mail->isHTML(true);
