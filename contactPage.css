@@ -6,6 +6,15 @@ nav {
   background: rgb(80, 94, 80);
 }
 
+@media screen and (max-width: 1050px) {
+  nav a {
+    display: block;
+  }
+  nav {
+    height: 35vh;
+  }
+}
+
 a {
   display: inline-block;
   margin-top: 20px;
@@ -33,15 +42,6 @@ footer {
   text-align: center;
   margin-top: 25px;
   font-size: 10pt;
-}
-
-@media screen and (max-width: 1050px) {
-  nav a {
-    display: block;
-  }
-  nav {
-    height: 30vh;
-  }
 }
 
 .alertEmailSuccess {
